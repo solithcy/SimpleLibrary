@@ -1,11 +1,16 @@
 ﻿# SimpleLibrary
 
-A simple library/
+A simple library
 
 ## Prerequisites
 
 - Git
 - Dotnet SDK & Runtime
+
+## Cloning
+```bash
+$ git clone https://github.com/solithcy/SimpleLibrary
+```
 
 ## Usage
 

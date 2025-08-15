@@ -7,7 +7,7 @@ public class Library
     // TODO: add private list reasoning to readme
     private List<Book> _books = [];
     private List<Patron> _patrons = [];
-    public int PatronCount => _patrons.Count;
+    public List<Patron> Patrons => [.._patrons];
     
     public Library()
     {

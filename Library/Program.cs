@@ -71,6 +71,6 @@ public static class Program
         Console.WriteLine($"book is available: {book.IsAvailable}");
         
         library.RemovePatron(patron1);
-        Console.WriteLine($"library has {library.PatronCount} patrons");
+        Console.WriteLine($"library has {library.Patrons.Count} patrons");
     }
 }

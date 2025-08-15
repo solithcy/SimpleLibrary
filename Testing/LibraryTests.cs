@@ -106,7 +106,7 @@ public class LibraryTests
     [Test]
     public void Check_That_PatronCount_Is_Correct()
     {
-        Assert.That(_library.PatronCount, Is.EqualTo(2));
+        Assert.That(_library.Patrons, Has.Count.EqualTo(2));
     }
 
     [Test]

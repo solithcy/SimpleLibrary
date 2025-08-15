@@ -4,7 +4,6 @@ namespace Library;
 
 public class Library
 {
-    // TODO: add private list reasoning to readme
     private List<Book> _books = [];
     private List<Patron> _patrons = [];
     public List<Patron> Patrons => [.._patrons];

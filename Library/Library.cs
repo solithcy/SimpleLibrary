@@ -1,4 +1,6 @@
-﻿namespace Library;
+﻿using System.Runtime.CompilerServices;
+
+namespace Library;
 
 public class Library
 {
@@ -27,6 +29,8 @@ public class Library
         {
             throw new NoBookException();
         }
+
+        if (!book.IsAvailable) throw new BookNotAvailableException();
 
         _books.Remove(book);
     }
@@ -58,7 +62,6 @@ public class Library
         // we do checks here and not above as they could belong to a different library
         if (!_patrons.Contains(patron))
         {
-            if (patron.InLibrary) throw new PatronDoesNotHaveLibraryException();
             throw new PatronNotInThisLibraryException();
         }
 
@@ -94,7 +97,7 @@ public class DuplicateBookException() : Exception("this book is already in the l
 
 public class NoBookException() : Exception("this book is not in the library");
 
-public class PatronNotInThisLibraryException() : Exception("this patron belongs to a different library");
+public class PatronNotInThisLibraryException() : Exception("this patron does not belong to this library");
 
 public class PatronDoesNotOwnBookException() : Exception("this book doesn't return to this patron");
 

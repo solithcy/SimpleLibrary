@@ -20,4 +20,11 @@
         <Using Include="NUnit.Framework"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Library\Library.csproj" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <AssemblyName>Testing.LibraryTests</AssemblyName>
+    </PropertyGroup>
 </Project>
